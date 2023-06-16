@@ -18,8 +18,11 @@
     <div class="row">
       <h1>Hello world</h1>
 
-      <input type="text" class="form-control bg-dark text-white rounded-0 border-0 my-4"
-      placeholder="Search users...">
+      <input
+        type="text"
+        class="form-control bg-dark text-white rounded-0 border-0 my-4"
+        placeholder="Search users..."
+      />
 
       <table class="table table-dark">
         <thead>
@@ -45,4 +48,8 @@
 </main>
 
 <style>
+  :global(body) {
+    background: #141414;
+    color: #fff;
+  }
 </style>
