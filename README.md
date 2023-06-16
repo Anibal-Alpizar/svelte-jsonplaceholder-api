@@ -1,4 +1,6 @@
-# This repo is no longer maintained. Consider using `npm init vite` and selecting the `svelte` option or — if you want a full-fledged app framework — use [SvelteKit](https://kit.svelte.dev), the official application framework for Svelte.
+![image](https://github.com/Anibal-Alpizar/svelte-jsonplaceholder-api/assets/82195641/19ee4684-2075-49a9-857f-190fbc26f5f2)
+
+![image](https://github.com/Anibal-Alpizar/svelte-jsonplaceholder-api/assets/82195641/26f4c193-0baf-4a35-b13c-c324d233fc65)
 
 ---
 
