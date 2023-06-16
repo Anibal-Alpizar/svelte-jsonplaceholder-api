@@ -1,7 +1,10 @@
 <script>
+  import { onMount } from "svelte";
+
   let titles = ["id", "name", "username", "email"];
   let users = [];
   let filteredUsers = [];
+  let ref = null;
 
   const loadUsers = async () => {
     const res = await fetch("https://jsonplaceholder.typicode.com/users");
@@ -20,20 +23,23 @@
         user.email.toLowerCase().includes(value.toLowerCase())
     );
   };
+
+  onMount(() => {
+    ref.focus();
+  });
 </script>
 
 <main>
   <div class="container">
     <div class="row">
       <h1>Hello world</h1>
-
       <input
         type="text"
         class="form-control bg-dark text-white rounded-0 border-0 my-4"
         placeholder="Search users..."
         on:keyup={({ target }) => searchUser(target.value)}
+        bind:this={ref}
       />
-
       <table class="table table-dark">
         <thead>
           <tr>
