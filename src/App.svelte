@@ -1,4 +1,6 @@
 <script>
+  let titles = ["id", "name", "username", "email"];
+
   let users = [];
 
   const loadUsers = async () => {
@@ -18,13 +20,18 @@
       <table class="table table-dark">
         <thead>
           <tr>
-            <th />
+            {#each titles as title}
+              <th>{title}</th>
+            {/each}
           </tr>
         </thead>
         <tbody>
           {#each users as user}
             <tr>
+              <td>{user.id}</td>
               <td>{user.name}</td>
+              <td>{user.username}</td>
+              <td>{user.email}</td>
             </tr>
           {/each}
         </tbody>
